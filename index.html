@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Disease Prediction System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>🧠 AI Disease Prediction System</h1>
+
+<div class="container">
+
+<div class="symptomBox">
+
+<h3>Select Symptoms</h3>
+
+<input type="text" id="search" placeholder="Search symptom..." onkeyup="searchSymptoms()">
+
+<div id="symptoms">
+
+<label><input type="checkbox" value="fever" onchange="predictDisease()"> Fever</label>
+<label><input type="checkbox" value="cough" onchange="predictDisease()"> Cough</label>
+<label><input type="checkbox" value="headache" onchange="predictDisease()"> Headache</label>
+<label><input type="checkbox" value="vomiting" onchange="predictDisease()"> Vomiting</label>
+<label><input type="checkbox" value="fatigue" onchange="predictDisease()"> Fatigue</label>
+<label><input type="checkbox" value="stomach" onchange="predictDisease()"> Stomach Pain</label>
+<label><input type="checkbox" value="cold" onchange="predictDisease()"> Cold</label>
+<label><input type="checkbox" value="sorethroat" onchange="predictDisease()"> Sore Throat</label>
+<label><input type="checkbox" value="chestpain" onchange="predictDisease()"> Chest Pain</label>
+<label><input type="checkbox" value="dizziness" onchange="predictDisease()"> Dizziness</label>
+
+<label><input type="checkbox" value="diarrhea" onchange="predictDisease()"> Diarrhea</label>
+<label><input type="checkbox" value="backpain" onchange="predictDisease()"> Back Pain</label>
+<label><input type="checkbox" value="jointpain" onchange="predictDisease()"> Joint Pain</label>
+<label><input type="checkbox" value="rash" onchange="predictDisease()"> Skin Rash</label>
+<label><input type="checkbox" value="itching" onchange="predictDisease()"> Itching</label>
+<label><input type="checkbox" value="weightloss" onchange="predictDisease()"> Weight Loss</label>
+<label><input type="checkbox" value="blurvision" onchange="predictDisease()"> Blur Vision</label>
+<label><input type="checkbox" value="shortbreath" onchange="predictDisease()"> Short Breath</label>
+<label><input type="checkbox" value="legpain" onchange="predictDisease()"> Leg Pain</label>
+<label><input type="checkbox" value="neckpain" onchange="predictDisease()"> Neck Pain</label>
+
+</div>
+
+<button onclick="clearSymptoms()">Clear</button>
+
+</div>
+
+<div class="resultBox">
+
+<h3>Health Analysis Dashboard</h3>
+
+<div id="result">Select symptoms to analyze</div>
+
+<div id="probability"></div>
+
+<div id="suggestion"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
