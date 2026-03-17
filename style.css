@@ -1,0 +1,77 @@
+body{
+font-family:Arial;
+background:linear-gradient(45deg,#ff6a00,#ee0979,#00c6ff,#0072ff);
+background-size:400% 400%;
+animation:bg 10s infinite;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.symptomBox{
+background:white;
+color:black;
+padding:20px;
+border-radius:15px;
+width:300px;
+height:400px;
+overflow:auto;
+}
+
+#search{
+width:90%;
+padding:8px;
+margin-bottom:10px;
+}
+
+label{
+display:block;
+margin:5px;
+}
+
+.resultBox{
+background:white;
+color:black;
+padding:20px;
+border-radius:15px;
+width:300px;
+}
+
+#result{
+font-size:22px;
+font-weight:bold;
+margin-top:10px;
+}
+
+#probability{
+margin-top:10px;
+font-size:18px;
+}
+
+#suggestion{
+margin-top:10px;
+font-size:16px;
+}
+
+button{
+padding:8px 15px;
+border:none;
+background:#0072ff;
+color:white;
+border-radius:6px;
+margin-top:10px;
+cursor:pointer;
+}
